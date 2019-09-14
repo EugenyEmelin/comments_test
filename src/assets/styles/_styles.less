@@ -1,0 +1,109 @@
+@import "_variables";
+
+body {
+  font-family: 'Sofia Pro', "Arial Black", sans-serif;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 0 50px;
+  .md-block({ padding: 0 25px });
+  .xs-block({ padding: 0 10px });
+}
+.small-container {
+  padding: 0 190px;
+  .md-block({ padding: 0 55px; });
+  .xs-block({ padding: 0 35px; });
+}
+.mini-container {
+  padding: 0 300px;
+  .lg-block({padding: 0 180px;});
+  .md-block({ padding: 0 110px; });
+  .xs-block({ padding: 0 55px; });
+}
+.page-content {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+.row-sb {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.row-align-center {
+  display: flex;
+  align-items: center;
+}
+.h1, .h2, .h3, .h4 {
+  font-weight: bold;
+  color: @colorTitle;
+}
+.h1 {
+  font-size: 70px;
+  padding: 75px 0 55px 0;
+  .md-block({ font-size: 36px; padding: 55px 0;});
+  .xs-block({ font-size: 30px; padding: 45px 0;});
+}
+.h2 {
+  font-size: 52px;
+  font-weight: bold;
+  .md-block({ font-size: 44px; });
+  .xs-block({ font-size: 38px; });
+}
+.h3 {
+  font-size: 36px;
+  margin: 15px 0 25px 0;
+  .md-block({ font-size: 30px; });
+  .xs-block({ font-size: 24px; });
+}
+.h4 {
+  font-size: 24px;
+  color: #888a8b;
+}
+.text {
+  font-size: 17px;
+  color: @colorText;
+  margin-bottom: 24px;
+}
+.img-wrapper {
+  .xs-block({ height: 28vh; });
+  img {
+    width: 100%;
+    height: auto;
+    .xs-block({ min-width: 100%; width: auto; height: 100%;});
+  }
+}
+.btn {
+  background-color: #60e3a1;
+  color: @colorTitle;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+  width: 150px;
+}
+.border-btn {
+  background-color: transparent;
+  border: 1.5px solid #60e3a1;
+  border-radius: 3px;
+  padding: 20px 30px;
+  margin: 45px auto;
+  display: inline-block;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+button[disabled] {
+  opacity: .4;
+  cursor: no-drop;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
