@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosCreate = axios.create({
-  baseURL: 'https://5cbef81d06a6810014c66193.mockapi.io/api',
+    baseURL: 'http://localhost:8080',
   timeout: 5000,
   withCredentials: true
 })
